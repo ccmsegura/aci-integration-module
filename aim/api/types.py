@@ -34,6 +34,8 @@ icmpv4_type = {'0': 'echo-rep', '3': 'dst-unreach',
 icmpv6_type = {'0': UNSPECIFIED, '1': 'dst-unreach', '3': 'time-exceeded',
                '128': 'echo-req', '129': 'echo-rep', '135': 'nbr-solicit',
                '136': 'nbr-advert', '137': 'redirect'}
+icmpv4_code = {'0': '0',
+               '0xFFFF': 'unspecified'}
 ip_protocol = {'0': UNSPECIFIED, '1': 'icmp', '2': 'igmp', '6': 'tcp',
                '8': 'egp', '9': 'igp', '17': 'udp', '58': 'icmpv6',
                '88': 'eigrp', '89': 'ospfigp', '103': 'pim', '115': 'l2tp'}

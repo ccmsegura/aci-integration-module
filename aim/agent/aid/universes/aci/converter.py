@@ -77,6 +77,7 @@ arp_opcode = mapped_attribute(t.arp_opcode)
 ether_type = mapped_attribute(t.ether_type)
 icmpv4_type = mapped_attribute(t.icmpv4_type)
 icmpv6_type = mapped_attribute(t.icmpv6_type)
+icmpv4_code = mapped_attribute(t.icmpv4_code)
 ip_protocol = mapped_attribute(t.ip_protocol)
 ethertype = mapped_attribute(t.ethertype)
 
@@ -764,6 +765,10 @@ resource_map = {
                        'converter': port},
             'ethertype': {'other': 'ethertype',
                           'converter': ethertype},
+            'icmpType': {'other': 'icmp_type',
+                         'converter': icmpv4_type},
+            'icmpCode': {'other': 'icmp_code',
+                         'converter': icmpv4_code},
         }
     }],
     'hostprotRemoteIp': [{
